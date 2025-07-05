@@ -1,0 +1,100 @@
+/* Full-page gradient background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #3f2b96, #a8c0ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Centered card with glass effect */
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+.card h1 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+/* Input + button group */
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: none;
+  width: 250px;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  background-color: #6a5acd;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #574b90;
+  transform: scale(1.05);
+}
+
+/* Image Display Box */
+.image-box {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.image-box img {
+  width: 250px;
+  max-height: 300px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-box img:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  input {
+    width: 100%;
+  }
+
+  .card h1 {
+    font-size: 1.6rem;
+  }
+}
