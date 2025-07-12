@@ -5,6 +5,7 @@ const App = () => {
   const [prompt, setPrompt] = useState('');
   const [image, setImage] = useState(null);
 
+  // You can replace this with environment variable later
   const accessKey = 'WfcITMgR6_j5s5cvOz-VZm6q8T4ZngffeFnV-3QXmwI';
 
   const handleGenerate = async () => {
